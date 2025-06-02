@@ -1,5 +1,4 @@
-
-        *{
+*{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -559,4 +558,38 @@
 }
 .p { margin-top: 0.5rem;
     line-height: 1.5;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor :pointer;
+    color:#0a3b3b;
+
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        right: 10%;
+        width: 200px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
 }
